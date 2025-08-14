@@ -1,0 +1,61 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --purple: #6a0dad;
+    --light-purple: #b19cd9;
+    --green: #00ff9d;
+    --pink: #ff69b4;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+header {
+    background: linear-gradient(90deg, var(--purple), var(--pink));
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--green);
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.project-card {
+    background: var(--light-purple);
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 10px;
+    color: var(--black);
+    width: 80%;
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}

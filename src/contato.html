@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Pablo Emidio</title>
+  <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Pablo Emidio</h1>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contato-section">
+      <h2>Contato</h2>
+      <p>Tem um projeto ou ideia? Me mande uma mensagem!</p>
+
+      <form class="contato-form" action="/contato" method="POST">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+        </div>
+
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Pablo Emidio. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,156 @@
+/* FONTES & RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0a0a0a;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.485);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+}
+
+header h1 {
+  color: #9b59b6;
+  font-size: 1.8rem;
+}
+
+header ul {
+  display: flex;
+  gap: 20px;
+}
+
+header ul li a {
+  color: #fff;
+  transition: 0.3s;
+}
+
+header ul li a:hover {
+  color: #3498db;
+}
+
+/* HERO */
+#hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #9b59b6, #3498db);
+  text-align: center;
+  animation: backgroundShift 10s infinite alternate;
+}
+
+@keyframes backgroundShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #fff;
+  animation: fadeInUp 1s ease forwards;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+.btn {
+  text-align: center;
+  padding: 12px 25px;
+  background: #9b59b6;
+  color: #fff;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #3498db;
+}
+
+/* SEÇÕES */
+section {
+  padding: 100px 50px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #9b59b6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#projetos .projetos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.projeto-card {
+  background: #111;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projeto-card:hover {
+  transform: translateY(-20px);
+  cursor: pointer;
+  box-shadow: 0 0 20px #9b59b6;
+}
+
+.projeto-card iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+section#contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#contato > a > p{
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 900;
+    height: 50px;
+    margin-top: 50px;
+}
+
+/* ANIMAÇÕES */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  border-top: 1px solid #9b59b6;
+}

@@ -1,0 +1,157 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f9fc;
+  color: #1f1f1f;
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #1f1f1f;
+  text-decoration: none;
+  font-weight: 500;
+  transition: .3s;
+}
+
+nav a:hover {
+  color: #3383ff;
+}
+
+/* SECTION */
+section {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  color: #3383ff;
+  margin-bottom: 20px;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  flex: 1 1 250px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* BOTÃO DE TEMA */
+#theme-toggle {
+  background: none;
+  border: 2px solid #3383ff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: .3s;
+}
+
+#theme-toggle:hover {
+  background: #3383ff;
+  color: white;
+}
+
+/* TRANSIÇÃO SUAVE DE TEMA */
+body, header, section, .card, footer {
+  transition: background .3s, color .3s;
+}
+
+/* TEMA ESCURO */
+.dark-mode body {
+  background: #0f0f0f;
+  color: #e7e7e7;
+}
+
+.dark-mode header {
+  background: #161616;
+  box-shadow: 0 2px 12px rgba(255,255,255,0.05);
+}
+
+.dark-mode nav a {
+  color: #e7e7e7;
+}
+
+.dark-mode nav a:hover {
+  color: #74a6ff;
+}
+
+.dark-mode #theme-toggle {
+  border-color: #74a6ff;
+  color: #74a6ff;
+}
+
+.dark-mode #theme-toggle:hover {
+  background: #74a6ff;
+  color: black;
+}
+
+.dark-mode .card {
+  background: #1a1a1a;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.dark-mode footer {
+  background: #111;
+}
+
+
+/* FADE-IN */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  margin-top: 40px;
+  background: #e8eef5;
+}

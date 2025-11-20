@@ -76,6 +76,55 @@ section h2 {
   transform: translateY(-5px);
 }
 
+.project-card {
+    background: #0e0e10;
+    border: 1px solid #2c2c35;
+    padding: 20px;
+    border-radius: 14px;
+    max-width: 350px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 18px rgba(122, 88, 255, 0.4);
+}
+
+.project-card h3 {
+    color: #b69bff;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #cfd1ff;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.project-buttons a {
+    padding: 8px 12px;
+    background: #4d47ff;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.project-buttons a:hover {
+    background: #6f67ff;
+}
+
+
+
+
+
 /* BOTÃO DE TEMA */
 #theme-toggle {
   background: none;
@@ -133,6 +182,12 @@ body, header, section, .card, footer {
 
 .dark-mode footer {
   background: #111;
+}
+
+
+section#contato > p > a{
+    text-decoration: none;
+    color: #6f67ff;
 }
 
 
